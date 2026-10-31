@@ -151,15 +151,16 @@ Verification and any remaining limitations should be considered.
 
 **No publicly disclosed AI Device Bridge vulnerabilities or verified security corrections to such have been recorded in this document at the time of its initial creation.**
 
-The foundational record, 0000-0000-0000-0001, identifies the risk of losing historical knowledge about flaws, corrections, and resolutions.
+The foundational record, `0000-0000-0000-0001`, identifies the risk of losing historical knowledge about flaws, corrections, and resolutions.
 
 This record establishes the purpose and necessity of maintaining a continuing vulnerability history. It is a logically derived architectural concern rather than a verified software exploit.
 
-Subsequent vulnerability discoveries, mitigations, corrections, and resolutions are to be documented within the designated recording area bounded by <!-- RECORD START --> and <!-- RECORD END -->.
+Subsequent vulnerability discoveries, mitigations, corrections, and resolutions are to be documented within the designated recording area bounded by `<!-- RECORD START -->` and `<!-- RECORD END -->`.
 
 The absence of subsequent entries should not be interpreted as a security certification.
 
 *START*
+
 ```html
 ### 0000-0000-0000-0001 — Lack of Tracking of Flaw to Feature Loss Tracking
 
@@ -229,9 +230,11 @@ Exclusive Forgetfulness.
 ```
 
 The following recording area is reserved for subsequent vulnerability discoveries and their documented mitigations, corrections, and resolutions.
+
 <!-- RECORD START -->
 
 <!-- RECORD END -->
+
 This identifies the underlying concern that necessitates preserving subsequent vulnerability records. The absence of recorded history can allow previously discovered flaws, abandoned corrections, and their underlying reasoning to be forgotten.
 
 *END*
@@ -240,9 +243,13 @@ This identifies the underlying concern that necessitates preserving subsequent v
 
 ## 7. Vulnerability Record Format
 
-Each public record should use a consistent structure.
+Each subsequent vulnerability record should be added between the `<!-- RECORD START -->` and `<!-- RECORD END -->` markers in Section 6.
 
-The following template may be copied when documenting a new issue.
+These markers designate the continuing historical record. They do not mark the beginning or end of Record `0000-0000-0000-0001` itself.
+
+Record `0000-0000-0000-0001` remains the foundational explanation for maintaining this history.
+
+Each subsequent entry should use a unique record identifier and follow the format below where applicable.
 
 ### AIDB-SEC-YYYY-NNN — Vulnerability Title
 
@@ -459,6 +466,18 @@ A record does not need to be lengthy to be useful.
 Concise, accurate documentation is preferable to speculative technical explanations.
 
 Incomplete information should be identified as incomplete rather than filled with unsupported assumptions.
+
+### Record Placement and Continuity
+
+New vulnerability and resolution records should be inserted within the designated recording area in Section 6.
+
+The foundational Record `0000-0000-0000-0001` should remain identifiable as the reason this history is maintained.
+
+The recording delimiters should be preserved when adding or revising records, so future contributors and automated documentation tools can reliably locate the historical entries.
+
+Existing records may be amended when new evidence becomes available. Significant revisions should retain an understandable history of what changed and why.
+
+Public entries must continue to respect the responsible disclosure requirements established in `SECURITY.md`.
 
 ### Historical continuity
 
