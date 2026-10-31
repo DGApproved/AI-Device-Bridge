@@ -233,6 +233,7 @@ The following recording area is reserved for subsequent vulnerability discoverie
 
 <!-- RECORD END -->
 This identifies the underlying concern that necessitates preserving subsequent vulnerability records. The absence of recorded history can allow previously discovered flaws, abandoned corrections, and their underlying reasoning to be forgotten.
+
 *END*
 
 ---
