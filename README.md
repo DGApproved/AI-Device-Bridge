@@ -509,3 +509,11 @@ AI Device Bridge begins with one reference device and one practical integration 
 Its future development should be guided by demonstrated compatibility, documented interfaces, reproducible testing, and contributions from developers who find useful applications for existing AI processing hardware.
 
 **The objective is not to replace what already works. It is to help more of what already works function together.**
+
+## note: I don't assume to be a professional.
+
+As the project grows, I would encourage maintaining a simple rule:
+
+**Ask why before assuming, explain why when deciding, and remain willing to reconsider when better evidence or implementations become available.**
+
+That leaves room for both intentional design decisions and genuine mistakes. It also helps prevent a future maintainer from unknowingly reversing an important compatibility decision simply because its original reasoning wasn't documented.
